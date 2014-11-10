@@ -1,0 +1,8 @@
+#!/bin/bash
+
+pandoc="${HOME}/.cabal/bin/pandoc"
+md_flavor='markdown_github'
+
+$pandoc --from=${md_flavor} --to=rst --output=output/test-converted.rst 'testdata/test.md'
+$pandoc --from=rst --to=${md_flavor} --output=output/test-converted.md 'testdata/test.rst'
+

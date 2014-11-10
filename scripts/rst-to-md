@@ -1,0 +1,7 @@
+#!/bin/bash
+
+pandoc="${HOME}/.cabal/bin/pandoc"
+md_flavor='markdown_github'
+
+$pandoc --to="${md_flavor}" --from=rst --base-header-level=$2 --output="${1}.md" "${1}"
+
