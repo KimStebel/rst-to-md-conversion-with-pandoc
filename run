@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo docker run --rm -i kimstebel/md-to-rst /scripts/convert
+
